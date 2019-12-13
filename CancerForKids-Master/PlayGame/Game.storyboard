@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Zf-Ev-A1A">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="Play" id="BV1-FR-VrT" customClass="GameViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <connections>
+                        <segue destination="4Zf-Ev-A1A" kind="show" identifier="PlayToHomeIdentifier" customClass="SegueFromLeft" customModule="CancerForKids_Master" customModuleProvider="target" id="2Zu-81-DPy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--AreaOrangTua-->
+        <scene sceneID="AeF-Kn-8VZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Parents" referencedIdentifier="AreaOrangTua" id="eow-qb-DZ3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMe-f3-X4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-889"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="XeF-0O-vD0">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="4Zf-Ev-A1A" customClass="HomeViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bae-8e-NJa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9su-RW-YNS" userLabel="Periksa TubuhButton">
+                                <rect key="frame" x="55" y="113" width="706" height="111"/>
+                                <state key="normal" backgroundImage="PeriksaTubuhButton"/>
+                                <connections>
+                                    <action selector="periksaTubuhButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="gWX-Ep-Bkw"/>
+                                    <segue destination="GpN-gv-SyH" kind="show" id="jaa-0e-nzz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-fX-WPK" userLabel="Daftar Kegiatan Button">
+                                <rect key="frame" x="62" y="216" width="323" height="95"/>
+                                <state key="normal" backgroundImage="DaftarKegiatanButton"/>
+                                <connections>
+                                    <action selector="daftarKegiatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="IKf-hZ-lCQ"/>
+                                    <segue destination="AlC-IO-X0C" kind="show" id="EaZ-Vs-hcC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md7-Ds-o2a" userLabel="Catatan Kesehatan Button">
+                                <rect key="frame" x="62" y="320" width="517" height="95"/>
+                                <state key="normal" backgroundImage="CatatanKesehatanButton"/>
+                                <connections>
+                                    <action selector="catatanKesehatanButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="8lC-kL-mTh"/>
+                                    <segue destination="7N1-PS-Dg3" kind="show" id="KBQ-Q7-CND"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuf-KI-ary" userLabel="Reward Button">
+                                <rect key="frame" x="313" y="626" width="110" height="105"/>
+                                <state key="normal" backgroundImage="RewardButton"/>
+                                <connections>
+                                    <action selector="rewardButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="Fvg-2x-Ko3"/>
+                                    <segue destination="VeO-jd-jX2" kind="show" id="sr6-Mq-b8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjd-nv-4Jr" userLabel="Polisi Button">
+                                <rect key="frame" x="35" y="626" width="106" height="105"/>
+                                <state key="normal" backgroundImage="PolisiButton"/>
+                                <connections>
+                                    <action selector="polisiButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="jQ6-ZU-Sn0"/>
+                                    <segue destination="WsZ-dr-s02" kind="show" id="2dL-qL-3sy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKH-q3-hBW" userLabel="Play Button">
+                                <rect key="frame" x="147" y="575" width="160" height="156"/>
+                                <state key="normal" backgroundImage="PlayButton"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="pB4-On-Yxh"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" identifier="HomeToPlayIdentifier" id="zYp-VE-zo9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePolice" translatesAutoresizingMaskIntoConstraints="NO" id="Z3n-ri-XD9">
+                                <rect key="frame" x="943" y="229" width="16" height="489"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-Dk-GsF" userLabel="Area Orang Tua Button">
+                                <rect key="frame" x="62" y="424" width="515" height="95"/>
+                                <state key="normal" backgroundImage="AreaOrangTuaButton"/>
+                                <connections>
+                                    <action selector="areaOrangTuaButtonAction:" destination="4Zf-Ev-A1A" eventType="touchUpInside" id="13F-xP-Cqn"/>
+                                    <segue destination="eow-qb-DZ3" kind="show" id="gQF-ie-gsQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeFillCloud" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-L1-iQv">
+                                <rect key="frame" x="811" y="74" width="16" height="177"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hai, Apa Kabar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoW-ps-ri0">
+                                <rect key="frame" x="519" y="113" width="225" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1907650846" green="0.64379758880000004" blue="0.23095728160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="9su-RW-YNS" secondAttribute="trailing" constant="50" id="2jX-FL-NMJ"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="GZM-fX-WPK" secondAttribute="bottom" constant="457" id="5x8-vL-RKv"/>
+                            <constraint firstItem="GZM-fX-WPK" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="196" id="6sV-pP-Q8T"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="313" id="7ln-QX-VzL"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="300" id="9cz-sf-3RY"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="fjd-nv-4Jr" secondAttribute="bottom" constant="37" id="CEs-fN-YrU"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="E69-MQ-2iT"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="leading" secondItem="9su-RW-YNS" secondAttribute="trailing" constant="50" id="F7j-kj-bpd"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="209" id="H5W-KK-ABc"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="GZM-fX-WPK" secondAttribute="trailing" constant="639" id="L7d-Vw-CG0"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="Nuf-KI-ary" secondAttribute="bottom" constant="37" id="Lc0-LM-COJ"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="WKH-q3-hBW" secondAttribute="trailing" constant="717" id="Oni-Ix-4qj"/>
+                            <constraint firstItem="Nuf-KI-ary" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="606" id="RtS-0v-HNp"/>
+                            <constraint firstItem="9su-RW-YNS" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="55" id="STe-3G-BZy"/>
+                            <constraint firstItem="fjd-nv-4Jr" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="35" id="UH6-Uf-f6E"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="fjd-nv-4Jr" secondAttribute="trailing" constant="883" id="WoH-nS-UOo"/>
+                            <constraint firstItem="GZM-fX-WPK" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="ZLM-Yg-BtS"/>
+                            <constraint firstItem="md7-Ds-o2a" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="62" id="bPU-DT-YCV"/>
+                            <constraint firstItem="5AB-Dk-GsF" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="404" id="dWO-2c-mJF"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="Z3n-ri-XD9" secondAttribute="bottom" constant="50" id="dhH-26-oPj"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="OuJ-L1-iQv" secondAttribute="trailing" constant="197" id="eqW-Ph-mbU"/>
+                            <constraint firstItem="OuJ-L1-iQv" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="54" id="ihr-M9-MLF"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="Z3n-ri-XD9" secondAttribute="trailing" constant="65" id="j6X-4r-oPy"/>
+                            <constraint firstItem="9su-RW-YNS" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="93" id="jdO-eb-XaS"/>
+                            <constraint firstItem="fjd-nv-4Jr" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="606" id="jfS-tU-Rva"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="md7-Ds-o2a" secondAttribute="bottom" constant="353" id="ktR-wq-Snx"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="WKH-q3-hBW" secondAttribute="bottom" constant="37" id="luD-KW-dzL"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="9su-RW-YNS" secondAttribute="bottom" constant="544" id="ppM-Sh-IIt"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="5AB-Dk-GsF" secondAttribute="trailing" constant="366" id="pyh-jr-01k"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="leading" secondItem="pCd-IS-zR9" secondAttribute="leading" constant="147" id="rlV-sx-O2Z"/>
+                            <constraint firstItem="WKH-q3-hBW" firstAttribute="top" secondItem="pCd-IS-zR9" secondAttribute="top" constant="555" id="sjh-1B-4Nl"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="5AB-Dk-GsF" secondAttribute="bottom" constant="249" id="v43-4G-zQS"/>
+                            <constraint firstItem="Z3n-ri-XD9" firstAttribute="leading" secondItem="md7-Ds-o2a" secondAttribute="trailing" constant="364" id="vrW-UJ-OXb"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="trailing" secondItem="Nuf-KI-ary" secondAttribute="trailing" constant="601" id="xs8-9J-ta0"/>
+                            <constraint firstItem="pCd-IS-zR9" firstAttribute="bottom" secondItem="OuJ-L1-iQv" secondAttribute="bottom" constant="517" id="zlD-cC-S4W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pCd-IS-zR9"/>
+                    </view>
+                    <connections>
+                        <outlet property="balloonImage" destination="OuJ-L1-iQv" id="z23-9s-xmV"/>
+                        <outlet property="characterImage" destination="Z3n-ri-XD9" id="dAa-MP-y6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOL-ZC-mmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="-955"/>
+        </scene>
+        <!--Detail Kegiatan View Controller-->
+        <scene sceneID="W33-ze-nBa">
+            <objects>
+                <viewController storyboardIdentifier="AgendaKegiatan" id="Ckb-Kj-ceX" customClass="DetailKegiatanViewController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0v5-FG-MSD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AgendaKegiatan" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-s6-9MY" userLabel="Agenda Kegiatan Title">
+                                <rect key="frame" x="418" y="65" width="324" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kalendar" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-Gx-UrN">
+                                <rect key="frame" x="398" y="76" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tanggal" translatesAutoresizingMaskIntoConstraints="NO" id="Uyh-sZ-mU3" userLabel="Tanggal Column">
+                                <rect key="frame" x="76" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jam" translatesAutoresizingMaskIntoConstraints="NO" id="SQT-mQ-xwx" userLabel="Jam Column">
+                                <rect key="frame" x="296" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bagian" translatesAutoresizingMaskIntoConstraints="NO" id="v78-Lv-CrX" userLabel="Bagian Column">
+                                <rect key="frame" x="516" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TingkatKesakitan" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-WY-bCR" userLabel="Tingkat Kesakitan Column">
+                                <rect key="frame" x="736" y="175" width="212" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-vj-A9h" userLabel="Tanggal Table View">
+                                <rect key="frame" x="76" y="263" width="212" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TanggalCell" id="Uzs-gM-zeG" userLabel="TanggalCell" customClass="TanggalTableViewCell" customModule="CancerForKids_Master" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="212" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uzs-gM-zeG" id="IFu-cu-BB2">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02-10-2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E71-vo-LAy">
+                                                    <rect key="frame" x="15" y="11" width="182" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tanggalLabel" destination="E71-vo-LAy" id="g8N-uE-FsJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ckb-Kj-ceX" id="nSQ-Nv-Gp5"/>
+                                    <outlet property="delegate" destination="Ckb-Kj-ceX" id="OZ6-EI-wnL"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ad7-9d-Pba" userLabel="Jam Table View">
+                                <rect key="frame" x="296" y="263" width="212" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JamCell" id="HVc-wK-Qx1" customClass="JamTableViewCell" customModule="CancerForKids_Master" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="212" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HVc-wK-Qx1" id="R8c-8W-oY5">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPl-P0-7rH" userLabel="Jam Label">
+                                                    <rect key="frame" x="15" y="11" width="182" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jamLabel" destination="WPl-P0-7rH" id="JDs-Zk-uDJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ckb-Kj-ceX" id="HtG-eC-l1L"/>
+                                    <outlet property="delegate" destination="Ckb-Kj-ceX" id="jcg-Yt-350"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FUs-13-Jka" userLabel="Bagian Table View">
+                                <rect key="frame" x="516" y="263" width="212" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BagianCell" id="1O3-yq-hwg" customClass="TanggalTableViewCell" customModule="CancerForKids_Master" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="212" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1O3-yq-hwg" id="qhi-CW-YZ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kepala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-zm-4o0" userLabel="Bagian Label">
+                                                    <rect key="frame" x="15" y="11" width="182" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bagianLabel" destination="0Kc-zm-4o0" id="igS-9o-rgz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ckb-Kj-ceX" id="EF5-UR-Aos"/>
+                                    <outlet property="delegate" destination="Ckb-Kj-ceX" id="F1i-K8-2Qo"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-m8-g2q" userLabel="Tingkat Kesakitan Table View">
+                                <rect key="frame" x="736" y="263" width="212" height="459"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TingkatKesakitanCell" id="k6b-Qm-ye7" customClass="TanggalTableViewCell" customModule="CancerForKids_Master" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="212" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k6b-Qm-ye7" id="Zx8-bW-7DU">
+                                            <rect key="frame" x="0.0" y="0.0" width="212" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsf-hR-QY6" userLabel="Tingkat Kesakitan Label">
+                                                    <rect key="frame" x="15" y="11" width="182" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tingkatKesakitanLabel" destination="Nsf-hR-QY6" id="GeH-xs-0yI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ckb-Kj-ceX" id="eTk-oh-0fW"/>
+                                    <outlet property="delegate" destination="Ckb-Kj-ceX" id="210-6w-nKP"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScJ-22-PDd">
+                                <rect key="frame" x="0.0" y="20" width="170" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backbutton"/>
+                                <connections>
+                                    <segue destination="7N1-PS-Dg3" kind="show" id="lCx-O6-xdW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rLj-W7-Mzy"/>
+                    </view>
+                    <connections>
+                        <outlet property="bagianTableView" destination="FUs-13-Jka" id="kyb-e0-qfJ"/>
+                        <outlet property="jamTableView" destination="ad7-9d-Pba" id="0JM-RD-9YD"/>
+                        <outlet property="tanggalTableView" destination="4bo-vj-A9h" id="OY9-GP-aes"/>
+                        <outlet property="tingkatKesakitanTableView" destination="NfH-m8-g2q" id="wQB-WK-HHG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HP0-VK-dV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="-955"/>
+        </scene>
+        <!--DaftarKegiatan-->
+        <scene sceneID="FQ1-8V-n6N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DaftarKegiatan" referencedIdentifier="DaftarKegiatan" id="AlC-IO-X0C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eog-Tw-jMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="-1255"/>
+        </scene>
+        <!--PeriksaTubuh-->
+        <scene sceneID="oWD-l4-2xJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SakitDimana" referencedIdentifier="PeriksaTubuh" id="GpN-gv-SyH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRv-Z9-fRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-1398"/>
+        </scene>
+        <!--PainLocator-->
+        <scene sceneID="Qd6-4R-ztV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PainLocator" referencedIdentifier="PainLocator" id="7N1-PS-Dg3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUd-Sy-2Uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="-1054"/>
+        </scene>
+        <!--PilihKarakter-->
+        <scene sceneID="fpY-ke-kGf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Character" referencedIdentifier="PilihKarakter" id="WsZ-dr-s02" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7L-Zb-HnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="-713"/>
+        </scene>
+        <!--Achievement-->
+        <scene sceneID="YkS-7b-MRQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Achievement" referencedIdentifier="Achievement" id="VeO-jd-jX2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06b-nC-Z3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-528"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AgendaKegiatan" width="205" height="111"/>
+        <image name="AreaOrangTuaButton" width="321" height="95"/>
+        <image name="Bagian" width="212" height="80"/>
+        <image name="CatatanKesehatanButton" width="323" height="95"/>
+        <image name="DaftarKegiatanButton" width="323" height="95"/>
+        <image name="HomeFillCloud" width="392" height="216"/>
+        <image name="HomePolice" width="210" height="484"/>
+        <image name="Jam" width="212" height="80"/>
+        <image name="Kalendar" width="80" height="80"/>
+        <image name="PeriksaTubuhButton" width="330" height="111"/>
+        <image name="PlayButton" width="160" height="156"/>
+        <image name="PolisiButton" width="106" height="105"/>
+        <image name="RewardButton" width="110" height="105"/>
+        <image name="Tanggal" width="212" height="80"/>
+        <image name="TingkatKesakitan" width="212" height="80"/>
+        <image name="backbutton" width="170" height="163"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lCx-O6-xdW"/>
+    </inferredMetricsTieBreakers>
+</document>

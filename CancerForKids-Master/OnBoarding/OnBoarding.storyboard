@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FED-3l-bLk">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Screen-->
+        <scene sceneID="7Qf-yv-Gyq">
+            <objects>
+                <viewController storyboardIdentifier="OnBoarding" id="FED-3l-bLk" userLabel="Onboarding Screen" customClass="OnboardingController" customModule="CancerForKids_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPh-Tr-cjt">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="mRt-LC-soT">
+                                <rect key="frame" x="179.5" y="715" width="753" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saq-5y-ABB">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wul-Wp-rkR" customClass="GetStarted" customModule="CancerForKids_Master" customModuleProvider="target">
+                                <rect key="frame" x="361.5" y="767" width="389" height="60"/>
+                                <color key="backgroundColor" red="0.1384509206" green="0.340767771" blue="0.78827553989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FNX-FB-9xe"/>
+                                    <constraint firstAttribute="width" constant="389" id="OFP-pe-10A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="FED-3l-bLk" eventType="touchUpInside" id="11l-Wz-67f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mav-xG-94X">
+                                <rect key="frame" x="1052" y="40" width="30" height="31"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="FED-3l-bLk" eventType="touchUpInside" id="9fj-T4-XJN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="1052" id="Brd-ST-ngl"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="179.5" id="CPG-UH-fbP"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="centerX" secondItem="Wul-Wp-rkR" secondAttribute="centerX" id="Ckd-HN-bnI"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="bottom" secondItem="t5M-ck-Wto" secondAttribute="bottom" id="Foq-3I-4Xm"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="mav-xG-94X" secondAttribute="bottom" constant="763" id="KnZ-Gz-EqT"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="bottom" secondItem="t5M-ck-Wto" secondAttribute="bottom" id="OGn-9w-9QS"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="top" secondItem="lPh-Tr-cjt" secondAttribute="top" id="TYG-da-yh4"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" id="TlD-vf-1fu"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="trailing" secondItem="t5M-ck-Wto" secondAttribute="trailing" id="UDk-Va-ZYh"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="centerX" secondItem="lPh-Tr-cjt" secondAttribute="centerX" id="Vp1-PD-l6s"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="Wul-Wp-rkR" secondAttribute="trailing" constant="361.5" id="a8j-y9-fcQ"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="361.5" id="aPp-0P-9n8"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="mav-xG-94X" secondAttribute="bottom" constant="763" id="bb5-Zq-RyR"/>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="20" id="bvB-pP-m6F"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="ddd-j9-cu7"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="bottom" secondItem="Wul-Wp-rkR" secondAttribute="bottom" constant="7" id="e1M-v8-GpS"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="top" secondItem="mRt-LC-soT" secondAttribute="bottom" constant="15" id="fKo-5e-0Ny"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="top" secondItem="lPh-Tr-cjt" secondAttribute="top" id="fUs-XA-YlW"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" id="frT-kV-KZO"/>
+                            <constraint firstItem="Wul-Wp-rkR" firstAttribute="top" secondItem="mRt-LC-soT" secondAttribute="bottom" constant="15" id="gqJ-vd-MUO"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="hPP-9j-WJM"/>
+                            <constraint firstItem="mRt-LC-soT" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="695" id="l02-uQ-spW"/>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="leading" secondItem="t5M-ck-Wto" secondAttribute="leading" constant="1052" id="rVB-gj-zdB"/>
+                            <constraint firstItem="saq-5y-ABB" firstAttribute="trailing" secondItem="t5M-ck-Wto" secondAttribute="trailing" id="s2t-eC-pwq"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mRt-LC-soT" secondAttribute="trailing" constant="179.5" id="vCG-IP-MDc"/>
+                            <constraint firstItem="mav-xG-94X" firstAttribute="top" secondItem="t5M-ck-Wto" secondAttribute="top" constant="20" id="wPA-mB-JOj"/>
+                            <constraint firstItem="t5M-ck-Wto" firstAttribute="trailing" secondItem="mav-xG-94X" secondAttribute="trailing" constant="30" id="zMi-AJ-hBX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t5M-ck-Wto"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Wul-Wp-rkR" id="j3Q-ZS-2RL"/>
+                        <outlet property="pageControl" destination="mRt-LC-soT" id="dgc-Xa-xGb"/>
+                        <outlet property="scrollView" destination="saq-5y-ABB" id="Ool-KL-TH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hO8-H0-Ugf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322.66187050359713" y="-8.6330935251798575"/>
+        </scene>
+    </scenes>
+</document>

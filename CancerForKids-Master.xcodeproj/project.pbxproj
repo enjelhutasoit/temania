@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B07D535230E841300151CB3 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D534230E841300151CB3 /* OnBoarding.storyboard */; };
+		4B07D53B230E872700151CB3 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D53A230E872700151CB3 /* Slide.swift */; };
+		4B07D53D230E874B00151CB3 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D53C230E874B00151CB3 /* Slide.xib */; };
+		4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D53E230E87CC00151CB3 /* GetStarted.swift */; };
+		4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D540230E894300151CB3 /* OnboardingController.swift */; };
+		4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07D546230EA52400151CB3 /* CharacterViewController.swift */; };
+		4B07D549230EA52400151CB3 /* Character.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B07D547230EA52400151CB3 /* Character.storyboard */; };
+		4B4517B123169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */; };
+		4B4B99752320EB750067BDED /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B99742320EB750067BDED /* AchievementViewController.swift */; };
+		4B4B99782320ED090067BDED /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B99772320ED090067BDED /* SegueFromRight.swift */; };
+		4B5418FC231E66E000EC0F19 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5418FB231E66E000EC0F19 /* Reminder.storyboard */; };
+		4B5418FE231E66ED00EC0F19 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5418FD231E66ED00EC0F19 /* ReminderViewController.swift */; };
+		4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */; };
+		4B9DCEBC231CDD0900ACEC1F /* RangeSakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DCEBB231CDD0900ACEC1F /* RangeSakitViewController.swift */; };
+		4B9DCEBE231D087000ACEC1F /* SudahMilihSakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DCEBD231D087000ACEC1F /* SudahMilihSakitViewController.swift */; };
+		4B9DCEC0231D384400ACEC1F /* DaftarKegiatan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9DCEBF231D384400ACEC1F /* DaftarKegiatan.storyboard */; };
+		4B9DCEC2231D385700ACEC1F /* WaktunyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DCEC1231D385700ACEC1F /* WaktunyaViewController.swift */; };
+		4BA3814F231FC08100E6A5EA /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3814E231FC08100E6A5EA /* Achievement.storyboard */; };
+		4BA38151231FC87400E6A5EA /* SakitDimana.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA38150231FC87400E6A5EA /* SakitDimana.storyboard */; };
+		4BA655FA231616C500F28EB2 /* DoneChoosingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA655F9231616C500F28EB2 /* DoneChoosingViewController.swift */; };
+		4BA655FC23166A6E00F28EB2 /* PainLocator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA655FB23166A6E00F28EB2 /* PainLocator.storyboard */; };
+		4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60562313E7FC00C5005E /* ParentsViewController.swift */; };
+		4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */; };
+		4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */; };
+		4E526D9A2314EE2700ACA520 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E526D992314EE2700ACA520 /* Game.storyboard */; };
+		4E526D9C2314EE3000ACA520 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9B2314EE3000ACA520 /* HomeViewController.swift */; };
+		4E526D9E2314EE3500ACA520 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9D2314EE3500ACA520 /* GameViewController.swift */; };
+		4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526D9F2314EE3A00ACA520 /* GameScene.swift */; };
+		4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E526DAB2314F03000ACA520 /* AudioModel.swift */; };
+		4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */; };
+		4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D735523177E09009D6CC6 /* Switch-Click.wav */; };
+		4E6F3DAA231E76F0004FC500 /* DetailKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */; };
+		4E6F3DAC231E78D9004FC500 /* TanggalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */; };
+		4E6F3DB4231EA52C004FC500 /* JamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DB3231EA52C004FC500 /* JamTableViewCell.swift */; };
+		4E6F3DB6231EA55E004FC500 /* BagianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6F3DB5231EA55E004FC500 /* BagianTableViewCell.swift */; };
+		4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */; };
+		4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */; };
+		4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */; };
+		4EA6A4232320F7CF0007CB56 /* BackgroundHome.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A41F2320F7CF0007CB56 /* BackgroundHome.mp3 */; };
+		4EA6A4242320F7CF0007CB56 /* ButtonOrange.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4202320F7CF0007CB56 /* ButtonOrange.wav */; };
+		4EA6A4252320F7CF0007CB56 /* BuatMilihKarakter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4212320F7CF0007CB56 /* BuatMilihKarakter.mp3 */; };
+		4EA6A4262320F7CF0007CB56 /* KapitenGame.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4222320F7CF0007CB56 /* KapitenGame.m4a */; };
+		4EA6A4402320F7DD0007CB56 /* halo apa kabar.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4292320F7DD0007CB56 /* halo apa kabar.mp4 */; };
+		4EA6A4412320F7DD0007CB56 /* jangan lupa untuk melakukannya ya.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A42B2320F7DD0007CB56 /* jangan lupa untuk melakukannya ya.mp4 */; };
+		4EA6A4422320F7DD0007CB56 /* yeay kamu dapat hadiah.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A42C2320F7DD0007CB56 /* yeay kamu dapat hadiah.mp4 */; };
+		4EA6A4432320F7DD0007CB56 /* senang sekali bisa mengenalmu!.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A42E2320F7DD0007CB56 /* senang sekali bisa mengenalmu!.mp4 */; };
+		4EA6A4442320F7DD0007CB56 /* kalau nama kamu siapa?.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A42F2320F7DD0007CB56 /* kalau nama kamu siapa?.mp4 */; };
+		4EA6A4452320F7DD0007CB56 /* hai!! beri aku nama dong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4302320F7DD0007CB56 /* hai!! beri aku nama dong.mp4 */; };
+		4EA6A4462320F7DD0007CB56 /* aku suka nama yang kamu beri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4312320F7DD0007CB56 /* aku suka nama yang kamu beri.mp4 */; };
+		4EA6A4472320F7DD0007CB56 /* aku adalah pemberantas kejahatan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4322320F7DD0007CB56 /* aku adalah pemberantas kejahatan.mp4 */; };
+		4EA6A4482320F7DD0007CB56 /* aku suka nama yang kamu beri. terimakasih.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4332320F7DD0007CB56 /* aku suka nama yang kamu beri. terimakasih.mp4 */; };
+		4EA6A4492320F7DD0007CB56 /* tanggal lahir kamu kapan?.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4342320F7DD0007CB56 /* tanggal lahir kamu kapan?.mp4 */; };
+		4EA6A44A2320F7DD0007CB56 /* kamu anak yang kuat, tetap semangat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4362320F7DD0007CB56 /* kamu anak yang kuat, tetap semangat.mp4 */; };
+		4EA6A44B2320F7DD0007CB56 /* wah hebat!! aku tahu kamu anak yang kuat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4372320F7DD0007CB56 /* wah hebat!! aku tahu kamu anak yang kuat.mp4 */; };
+		4EA6A44C2320F7DD0007CB56 /* perut mu.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A4392320F7DD0007CB56 /* perut mu.mp4 */; };
+		4EA6A44D2320F7DD0007CB56 /* matamu.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A43A2320F7DD0007CB56 /* matamu.mp4 */; };
+		4EA6A44E2320F7DD0007CB56 /* kakimu.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A43B2320F7DD0007CB56 /* kakimu.mp4 */; };
+		4EA6A44F2320F7DD0007CB56 /* tangan mu.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A43C2320F7DD0007CB56 /* tangan mu.mp4 */; };
+		4EA6A4502320F7DD0007CB56 /* dada mu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A43D2320F7DD0007CB56 /* dada mu.m4a */; };
+		4EA6A4512320F7DD0007CB56 /* kepalamu.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A43E2320F7DD0007CB56 /* kepalamu.mp4 */; };
+		4EA6A4522320F7DD0007CB56 /* bagian tubuh mana yang sakit hari ini.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6A43F2320F7DD0007CB56 /* bagian tubuh mana yang sakit hari ini.mp4 */; };
+		4EA6A4542320FAA90007CB56 /* PilihKarakterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6A4532320FAA90007CB56 /* PilihKarakterViewController.swift */; };
+		4EA6A4562320FB5B0007CB56 /* AkuSukaNamaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6A4552320FB5B0007CB56 /* AkuSukaNamaViewController.swift */; };
+		4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */; };
+		DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */; };
+		DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */; };
+		DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB369A6E230FFD100055CC0A /* sakitViewController.swift */; };
+		DB620D0F231D04AE00CA1727 /* Parents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BCB605D2313E81300C5005E /* Parents.storyboard */; };
+		DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */; };
+		DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */; };
+		DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B07D534230E841300151CB3 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		4B07D53A230E872700151CB3 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		4B07D53C230E874B00151CB3 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		4B07D53E230E87CC00151CB3 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
+		4B07D540230E894300151CB3 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		4B07D546230EA52400151CB3 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		4B07D547230EA52400151CB3 /* Character.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Character.storyboard; sourceTree = "<group>"; };
+		4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CancerForKids-Master.xcdatamodel"; sourceTree = "<group>"; };
+		4B4B99742320EB750067BDED /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		4B4B99772320ED090067BDED /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
+		4B5418FB231E66E000EC0F19 /* Reminder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
+		4B5418FD231E66ED00EC0F19 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLocatorViewController.swift; sourceTree = "<group>"; };
+		4B9DCEBB231CDD0900ACEC1F /* RangeSakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSakitViewController.swift; sourceTree = "<group>"; };
+		4B9DCEBD231D087000ACEC1F /* SudahMilihSakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudahMilihSakitViewController.swift; sourceTree = "<group>"; };
+		4B9DCEBF231D384400ACEC1F /* DaftarKegiatan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DaftarKegiatan.storyboard; sourceTree = "<group>"; };
+		4B9DCEC1231D385700ACEC1F /* WaktunyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaktunyaViewController.swift; sourceTree = "<group>"; };
+		4BA3814E231FC08100E6A5EA /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		4BA38150231FC87400E6A5EA /* SakitDimana.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SakitDimana.storyboard; sourceTree = "<group>"; };
+		4BA655F9231616C500F28EB2 /* DoneChoosingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneChoosingViewController.swift; sourceTree = "<group>"; };
+		4BA655FB23166A6E00F28EB2 /* PainLocator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PainLocator.storyboard; sourceTree = "<group>"; };
+		4BCB60562313E7FC00C5005E /* ParentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsViewController.swift; sourceTree = "<group>"; };
+		4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaViewController.swift; sourceTree = "<group>"; };
+		4BCB605D2313E81300C5005E /* Parents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Parents.storyboard; sourceTree = "<group>"; };
+		4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Good Unicorn - TTF.ttf"; sourceTree = "<group>"; };
+		4E526D992314EE2700ACA520 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		4E526D9B2314EE3000ACA520 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4E526D9D2314EE3500ACA520 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4E526D9F2314EE3A00ACA520 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4E526DAB2314F03000ACA520 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joy & Calm.m4a"; sourceTree = "<group>"; };
+		4E5D735523177E09009D6CC6 /* Switch-Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Switch-Click.wav"; sourceTree = "<group>"; };
+		4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKegiatanViewController.swift; sourceTree = "<group>"; };
+		4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanggalTableViewCell.swift; sourceTree = "<group>"; };
+		4E6F3DB3231EA52C004FC500 /* JamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamTableViewCell.swift; sourceTree = "<group>"; };
+		4E6F3DB5231EA55E004FC500 /* BagianTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagianTableViewCell.swift; sourceTree = "<group>"; };
+		4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CancerForKids-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E8A99FB230D4A6400A90EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E8A99FD230D4A6400A90EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA6A41F2320F7CF0007CB56 /* BackgroundHome.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundHome.mp3; sourceTree = "<group>"; };
+		4EA6A4202320F7CF0007CB56 /* ButtonOrange.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ButtonOrange.wav; sourceTree = "<group>"; };
+		4EA6A4212320F7CF0007CB56 /* BuatMilihKarakter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BuatMilihKarakter.mp3; sourceTree = "<group>"; };
+		4EA6A4222320F7CF0007CB56 /* KapitenGame.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = KapitenGame.m4a; sourceTree = "<group>"; };
+		4EA6A4292320F7DD0007CB56 /* halo apa kabar.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "halo apa kabar.mp4"; sourceTree = "<group>"; };
+		4EA6A42B2320F7DD0007CB56 /* jangan lupa untuk melakukannya ya.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jangan lupa untuk melakukannya ya.mp4"; sourceTree = "<group>"; };
+		4EA6A42C2320F7DD0007CB56 /* yeay kamu dapat hadiah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "yeay kamu dapat hadiah.mp4"; sourceTree = "<group>"; };
+		4EA6A42E2320F7DD0007CB56 /* senang sekali bisa mengenalmu!.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "senang sekali bisa mengenalmu!.mp4"; sourceTree = "<group>"; };
+		4EA6A42F2320F7DD0007CB56 /* kalau nama kamu siapa?.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kalau nama kamu siapa?.mp4"; sourceTree = "<group>"; };
+		4EA6A4302320F7DD0007CB56 /* hai!! beri aku nama dong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hai!! beri aku nama dong.mp4"; sourceTree = "<group>"; };
+		4EA6A4312320F7DD0007CB56 /* aku suka nama yang kamu beri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aku suka nama yang kamu beri.mp4"; sourceTree = "<group>"; };
+		4EA6A4322320F7DD0007CB56 /* aku adalah pemberantas kejahatan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aku adalah pemberantas kejahatan.mp4"; sourceTree = "<group>"; };
+		4EA6A4332320F7DD0007CB56 /* aku suka nama yang kamu beri. terimakasih.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aku suka nama yang kamu beri. terimakasih.mp4"; sourceTree = "<group>"; };
+		4EA6A4342320F7DD0007CB56 /* tanggal lahir kamu kapan?.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tanggal lahir kamu kapan?.mp4"; sourceTree = "<group>"; };
+		4EA6A4362320F7DD0007CB56 /* kamu anak yang kuat, tetap semangat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kamu anak yang kuat, tetap semangat.mp4"; sourceTree = "<group>"; };
+		4EA6A4372320F7DD0007CB56 /* wah hebat!! aku tahu kamu anak yang kuat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wah hebat!! aku tahu kamu anak yang kuat.mp4"; sourceTree = "<group>"; };
+		4EA6A4392320F7DD0007CB56 /* perut mu.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "perut mu.mp4"; sourceTree = "<group>"; };
+		4EA6A43A2320F7DD0007CB56 /* matamu.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = matamu.mp4; sourceTree = "<group>"; };
+		4EA6A43B2320F7DD0007CB56 /* kakimu.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kakimu.mp4; sourceTree = "<group>"; };
+		4EA6A43C2320F7DD0007CB56 /* tangan mu.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tangan mu.mp4"; sourceTree = "<group>"; };
+		4EA6A43D2320F7DD0007CB56 /* dada mu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dada mu.m4a"; sourceTree = "<group>"; };
+		4EA6A43E2320F7DD0007CB56 /* kepalamu.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kepalamu.mp4; sourceTree = "<group>"; };
+		4EA6A43F2320F7DD0007CB56 /* bagian tubuh mana yang sakit hari ini.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bagian tubuh mana yang sakit hari ini.mp4"; sourceTree = "<group>"; };
+		4EA6A4532320FAA90007CB56 /* PilihKarakterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihKarakterViewController.swift; sourceTree = "<group>"; };
+		4EA6A4552320FB5B0007CB56 /* AkuSukaNamaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuSukaNamaViewController.swift; sourceTree = "<group>"; };
+		4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamaUserViewController.swift; sourceTree = "<group>"; };
+		DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		DB369A6E230FFD100055CC0A /* sakitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sakitViewController.swift; sourceTree = "<group>"; };
+		DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarViewController.swift; sourceTree = "<group>"; };
+		DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarKegiatanViewController.swift; sourceTree = "<group>"; };
+		DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PertanyaanRahasiaDuaViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E8A99E5230D4A6400A90EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B07D533230E840000151CB3 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				4B07D534230E841300151CB3 /* OnBoarding.storyboard */,
+				4B07D540230E894300151CB3 /* OnboardingController.swift */,
+				4B07D53E230E87CC00151CB3 /* GetStarted.swift */,
+				4B07D53A230E872700151CB3 /* Slide.swift */,
+				4B07D53C230E874B00151CB3 /* Slide.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		4B07D54A230EA60900151CB3 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				4B07D547230EA52400151CB3 /* Character.storyboard */,
+				4EA6A4532320FAA90007CB56 /* PilihKarakterViewController.swift */,
+				4B07D546230EA52400151CB3 /* CharacterViewController.swift */,
+				4BA655F9231616C500F28EB2 /* DoneChoosingViewController.swift */,
+				DB369A69230FC9FE0055CC0A /* NamaUserViewController.swift */,
+				DB369A6B230FCA100055CC0A /* DatePickerViewController.swift */,
+				4EA6A4552320FB5B0007CB56 /* AkuSukaNamaViewController.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		4B4B99762320EB7E0067BDED /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3814E231FC08100E6A5EA /* Achievement.storyboard */,
+				4B4B99742320EB750067BDED /* AchievementViewController.swift */,
+			);
+			path = Achievement;
+			sourceTree = "<group>";
+		};
+		4B5418FF231E66F400EC0F19 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				4B5418FB231E66E000EC0F19 /* Reminder.storyboard */,
+				4B5418FD231E66ED00EC0F19 /* ReminderViewController.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		4B9DCEC3231D38B500ACEC1F /* DaftarKegiatan */ = {
+			isa = PBXGroup;
+			children = (
+				4B9DCEBF231D384400ACEC1F /* DaftarKegiatan.storyboard */,
+				4B9DCEC1231D385700ACEC1F /* WaktunyaViewController.swift */,
+			);
+			path = DaftarKegiatan;
+			sourceTree = "<group>";
+		};
+		4BA655FD23166AB900F28EB2 /* SakitNyaTuhDisini */ = {
+			isa = PBXGroup;
+			children = (
+				4BA655FB23166A6E00F28EB2 /* PainLocator.storyboard */,
+				4B5BC4622316C32800BC89EE /* PainLocatorViewController.swift */,
+			);
+			path = SakitNyaTuhDisini;
+			sourceTree = "<group>";
+		};
+		4BCB605C2313E80100C5005E /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				4BCB605D2313E81300C5005E /* Parents.storyboard */,
+				4BCB60562313E7FC00C5005E /* ParentsViewController.swift */,
+				4BCB60572313E7FC00C5005E /* PertanyaanRahasiaViewController.swift */,
+				DBBE21B72313F3D600C2E649 /* DaftarViewController.swift */,
+				DBBE21B92313F3FC00C2E649 /* DaftarKegiatanViewController.swift */,
+				DBBE21BB2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		4BCB605F2313EB5700C5005E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				4BCB605E2313EB4C00C5005E /* Good Unicorn - TTF.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		4E526D982314EDE000ACA520 /* PlayGame */ = {
+			isa = PBXGroup;
+			children = (
+				4E526DAB2314F03000ACA520 /* AudioModel.swift */,
+				4EE846FA231CCF740049BD98 /* SegueFromLeft.swift */,
+				4B4B99772320ED090067BDED /* SegueFromRight.swift */,
+				4E526DA62314EE6200ACA520 /* Sounds */,
+				4E526D9F2314EE3A00ACA520 /* GameScene.swift */,
+				4E526D9D2314EE3500ACA520 /* GameViewController.swift */,
+				4E526D9B2314EE3000ACA520 /* HomeViewController.swift */,
+				4E526D992314EE2700ACA520 /* Game.storyboard */,
+				4E6F3DA9231E76F0004FC500 /* DetailKegiatanViewController.swift */,
+				4E6F3DAB231E78D9004FC500 /* TanggalTableViewCell.swift */,
+				4E6F3DB3231EA52C004FC500 /* JamTableViewCell.swift */,
+				4E6F3DB5231EA55E004FC500 /* BagianTableViewCell.swift */,
+			);
+			path = PlayGame;
+			sourceTree = "<group>";
+		};
+		4E526DA62314EE6200ACA520 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A4272320F7DD0007CB56 /* Suara */,
+				4EA6A41E2320F7CF0007CB56 /* Music */,
+				4E5D735523177E09009D6CC6 /* Switch-Click.wav */,
+				4E5D735323177DD7009D6CC6 /* Joy & Calm.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4E8A99DF230D4A6400A90EC1 = {
+			isa = PBXGroup;
+			children = (
+				4E8A99EA230D4A6400A90EC1 /* CancerForKids-Master */,
+				4E8A99E9230D4A6400A90EC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E8A99E9230D4A6400A90EC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E8A99EA230D4A6400A90EC1 /* CancerForKids-Master */ = {
+			isa = PBXGroup;
+			children = (
+				4B9DCEC3231D38B500ACEC1F /* DaftarKegiatan */,
+				4B5418FF231E66F400EC0F19 /* Reminder */,
+				4BA655FD23166AB900F28EB2 /* SakitNyaTuhDisini */,
+				4BCB605C2313E80100C5005E /* Parent */,
+				DB369A6D230FFCF30055CC0A /* Sakit */,
+				4B4B99762320EB7E0067BDED /* Achievement */,
+				4B07D533230E840000151CB3 /* OnBoarding */,
+				4B07D54A230EA60900151CB3 /* Character */,
+				4E526D982314EDE000ACA520 /* PlayGame */,
+				4BCB605F2313EB5700C5005E /* font */,
+				4E8A99F8230D4A6400A90EC1 /* Assets.xcassets */,
+				4E8A99EB230D4A6400A90EC1 /* AppDelegate.swift */,
+				4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */,
+				4E8A99FD230D4A6400A90EC1 /* Info.plist */,
+				4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */,
+			);
+			path = "CancerForKids-Master";
+			sourceTree = "<group>";
+		};
+		4EA6A41E2320F7CF0007CB56 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A41F2320F7CF0007CB56 /* BackgroundHome.mp3 */,
+				4EA6A4202320F7CF0007CB56 /* ButtonOrange.wav */,
+				4EA6A4212320F7CF0007CB56 /* BuatMilihKarakter.mp3 */,
+				4EA6A4222320F7CF0007CB56 /* KapitenGame.m4a */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		4EA6A4272320F7DD0007CB56 /* Suara */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A4282320F7DD0007CB56 /* InHome */,
+				4EA6A42A2320F7DD0007CB56 /* SaatNotifikasiReminderDapetHadiah */,
+				4EA6A42D2320F7DD0007CB56 /* AfterCharacterSelection */,
+				4EA6A4352320F7DD0007CB56 /* SaatPeriksaTubuh */,
+			);
+			path = Suara;
+			sourceTree = "<group>";
+		};
+		4EA6A4282320F7DD0007CB56 /* InHome */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A4292320F7DD0007CB56 /* halo apa kabar.mp4 */,
+			);
+			path = InHome;
+			sourceTree = "<group>";
+		};
+		4EA6A42A2320F7DD0007CB56 /* SaatNotifikasiReminderDapetHadiah */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A42B2320F7DD0007CB56 /* jangan lupa untuk melakukannya ya.mp4 */,
+				4EA6A42C2320F7DD0007CB56 /* yeay kamu dapat hadiah.mp4 */,
+			);
+			path = SaatNotifikasiReminderDapetHadiah;
+			sourceTree = "<group>";
+		};
+		4EA6A42D2320F7DD0007CB56 /* AfterCharacterSelection */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A42E2320F7DD0007CB56 /* senang sekali bisa mengenalmu!.mp4 */,
+				4EA6A42F2320F7DD0007CB56 /* kalau nama kamu siapa?.mp4 */,
+				4EA6A4302320F7DD0007CB56 /* hai!! beri aku nama dong.mp4 */,
+				4EA6A4312320F7DD0007CB56 /* aku suka nama yang kamu beri.mp4 */,
+				4EA6A4322320F7DD0007CB56 /* aku adalah pemberantas kejahatan.mp4 */,
+				4EA6A4332320F7DD0007CB56 /* aku suka nama yang kamu beri. terimakasih.mp4 */,
+				4EA6A4342320F7DD0007CB56 /* tanggal lahir kamu kapan?.mp4 */,
+			);
+			path = AfterCharacterSelection;
+			sourceTree = "<group>";
+		};
+		4EA6A4352320F7DD0007CB56 /* SaatPeriksaTubuh */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A4362320F7DD0007CB56 /* kamu anak yang kuat, tetap semangat.mp4 */,
+				4EA6A4372320F7DD0007CB56 /* wah hebat!! aku tahu kamu anak yang kuat.mp4 */,
+				4EA6A4382320F7DD0007CB56 /* seberapa sakit */,
+				4EA6A43F2320F7DD0007CB56 /* bagian tubuh mana yang sakit hari ini.mp4 */,
+			);
+			path = SaatPeriksaTubuh;
+			sourceTree = "<group>";
+		};
+		4EA6A4382320F7DD0007CB56 /* seberapa sakit */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6A4392320F7DD0007CB56 /* perut mu.mp4 */,
+				4EA6A43A2320F7DD0007CB56 /* matamu.mp4 */,
+				4EA6A43B2320F7DD0007CB56 /* kakimu.mp4 */,
+				4EA6A43C2320F7DD0007CB56 /* tangan mu.mp4 */,
+				4EA6A43D2320F7DD0007CB56 /* dada mu.m4a */,
+				4EA6A43E2320F7DD0007CB56 /* kepalamu.mp4 */,
+			);
+			path = "seberapa sakit";
+			sourceTree = "<group>";
+		};
+		DB369A6D230FFCF30055CC0A /* Sakit */ = {
+			isa = PBXGroup;
+			children = (
+				DB369A6E230FFD100055CC0A /* sakitViewController.swift */,
+				4B9DCEBD231D087000ACEC1F /* SudahMilihSakitViewController.swift */,
+				4B9DCEBB231CDD0900ACEC1F /* RangeSakitViewController.swift */,
+				4BA38150231FC87400E6A5EA /* SakitDimana.storyboard */,
+			);
+			path = Sakit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E8A99E7230D4A6400A90EC1 /* CancerForKids-Master */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E8A9A00230D4A6400A90EC1 /* Build configuration list for PBXNativeTarget "CancerForKids-Master" */;
+			buildPhases = (
+				4E8A99E4230D4A6400A90EC1 /* Sources */,
+				4E8A99E5230D4A6400A90EC1 /* Frameworks */,
+				4E8A99E6230D4A6400A90EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CancerForKids-Master";
+			productName = "CancerForKids-Master";
+			productReference = 4E8A99E8230D4A6400A90EC1 /* CancerForKids-Master.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E8A99E0230D4A6400A90EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Muhammad Rajab Priharsanto";
+				TargetAttributes = {
+					4E8A99E7230D4A6400A90EC1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 4E8A99E3230D4A6400A90EC1 /* Build configuration list for PBXProject "CancerForKids-Master" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E8A99DF230D4A6400A90EC1;
+			productRefGroup = 4E8A99E9230D4A6400A90EC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E8A99E7230D4A6400A90EC1 /* CancerForKids-Master */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E8A99E6230D4A6400A90EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA6A4522320F7DD0007CB56 /* bagian tubuh mana yang sakit hari ini.mp4 in Resources */,
+				4B07D549230EA52400151CB3 /* Character.storyboard in Resources */,
+				4E5D735623177E09009D6CC6 /* Switch-Click.wav in Resources */,
+				DB620D0F231D04AE00CA1727 /* Parents.storyboard in Resources */,
+				4BA38151231FC87400E6A5EA /* SakitDimana.storyboard in Resources */,
+				4E8A99F9230D4A6400A90EC1 /* Assets.xcassets in Resources */,
+				4EA6A44A2320F7DD0007CB56 /* kamu anak yang kuat, tetap semangat.mp4 in Resources */,
+				4E5D735423177DD7009D6CC6 /* Joy & Calm.m4a in Resources */,
+				4B5418FC231E66E000EC0F19 /* Reminder.storyboard in Resources */,
+				4EA6A4252320F7CF0007CB56 /* BuatMilihKarakter.mp3 in Resources */,
+				4EA6A4492320F7DD0007CB56 /* tanggal lahir kamu kapan?.mp4 in Resources */,
+				4BCB60602313EB7600C5005E /* Good Unicorn - TTF.ttf in Resources */,
+				4EA6A44B2320F7DD0007CB56 /* wah hebat!! aku tahu kamu anak yang kuat.mp4 in Resources */,
+				4EA6A4432320F7DD0007CB56 /* senang sekali bisa mengenalmu!.mp4 in Resources */,
+				4BA3814F231FC08100E6A5EA /* Achievement.storyboard in Resources */,
+				4EA6A4262320F7CF0007CB56 /* KapitenGame.m4a in Resources */,
+				4EA6A44F2320F7DD0007CB56 /* tangan mu.mp4 in Resources */,
+				4EA6A4232320F7CF0007CB56 /* BackgroundHome.mp3 in Resources */,
+				4EA6A4402320F7DD0007CB56 /* halo apa kabar.mp4 in Resources */,
+				4EA6A4412320F7DD0007CB56 /* jangan lupa untuk melakukannya ya.mp4 in Resources */,
+				4EA6A4442320F7DD0007CB56 /* kalau nama kamu siapa?.mp4 in Resources */,
+				4E526D9A2314EE2700ACA520 /* Game.storyboard in Resources */,
+				4B07D53D230E874B00151CB3 /* Slide.xib in Resources */,
+				4EA6A44E2320F7DD0007CB56 /* kakimu.mp4 in Resources */,
+				4EA6A4502320F7DD0007CB56 /* dada mu.m4a in Resources */,
+				4EA6A4422320F7DD0007CB56 /* yeay kamu dapat hadiah.mp4 in Resources */,
+				4E8A99FC230D4A6400A90EC1 /* LaunchScreen.storyboard in Resources */,
+				4B07D535230E841300151CB3 /* OnBoarding.storyboard in Resources */,
+				4B9DCEC0231D384400ACEC1F /* DaftarKegiatan.storyboard in Resources */,
+				4EA6A4472320F7DD0007CB56 /* aku adalah pemberantas kejahatan.mp4 in Resources */,
+				4EA6A44D2320F7DD0007CB56 /* matamu.mp4 in Resources */,
+				4EA6A4452320F7DD0007CB56 /* hai!! beri aku nama dong.mp4 in Resources */,
+				4EA6A4242320F7CF0007CB56 /* ButtonOrange.wav in Resources */,
+				4EA6A4482320F7DD0007CB56 /* aku suka nama yang kamu beri. terimakasih.mp4 in Resources */,
+				4EA6A44C2320F7DD0007CB56 /* perut mu.mp4 in Resources */,
+				4EA6A4512320F7DD0007CB56 /* kepalamu.mp4 in Resources */,
+				4EA6A4462320F7DD0007CB56 /* aku suka nama yang kamu beri.mp4 in Resources */,
+				4BA655FC23166A6E00F28EB2 /* PainLocator.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E8A99E4230D4A6400A90EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE846FB231CCF740049BD98 /* SegueFromLeft.swift in Sources */,
+				4B07D53F230E87CC00151CB3 /* GetStarted.swift in Sources */,
+				4EA6A4562320FB5B0007CB56 /* AkuSukaNamaViewController.swift in Sources */,
+				4B5BC4632316C32800BC89EE /* PainLocatorViewController.swift in Sources */,
+				4E6F3DAA231E76F0004FC500 /* DetailKegiatanViewController.swift in Sources */,
+				DB369A6C230FCA100055CC0A /* DatePickerViewController.swift in Sources */,
+				4E526DA02314EE3A00ACA520 /* GameScene.swift in Sources */,
+				4BCB605A2313E7FC00C5005E /* PertanyaanRahasiaViewController.swift in Sources */,
+				DB369A6F230FFD100055CC0A /* sakitViewController.swift in Sources */,
+				4E6F3DAC231E78D9004FC500 /* TanggalTableViewCell.swift in Sources */,
+				4B9DCEC2231D385700ACEC1F /* WaktunyaViewController.swift in Sources */,
+				DB369A6A230FC9FE0055CC0A /* NamaUserViewController.swift in Sources */,
+				4B9DCEBC231CDD0900ACEC1F /* RangeSakitViewController.swift in Sources */,
+				4B4B99782320ED090067BDED /* SegueFromRight.swift in Sources */,
+				4E526D9C2314EE3000ACA520 /* HomeViewController.swift in Sources */,
+				4BCB60592313E7FC00C5005E /* ParentsViewController.swift in Sources */,
+				4B4B99752320EB750067BDED /* AchievementViewController.swift in Sources */,
+				DBBE21B82313F3D600C2E649 /* DaftarViewController.swift in Sources */,
+				4B9DCEBE231D087000ACEC1F /* SudahMilihSakitViewController.swift in Sources */,
+				4EA6A4542320FAA90007CB56 /* PilihKarakterViewController.swift in Sources */,
+				4B4517B123169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld in Sources */,
+				DBBE21BA2313F3FC00C2E649 /* DaftarKegiatanViewController.swift in Sources */,
+				4B07D548230EA52400151CB3 /* CharacterViewController.swift in Sources */,
+				4E526D9E2314EE3500ACA520 /* GameViewController.swift in Sources */,
+				4E6F3DB4231EA52C004FC500 /* JamTableViewCell.swift in Sources */,
+				4BA655FA231616C500F28EB2 /* DoneChoosingViewController.swift in Sources */,
+				DBBE21BC2314354E00C2E649 /* PertanyaanRahasiaDuaViewController.swift in Sources */,
+				4E526DAC2314F03000ACA520 /* AudioModel.swift in Sources */,
+				4E6F3DB6231EA55E004FC500 /* BagianTableViewCell.swift in Sources */,
+				4B5418FE231E66ED00EC0F19 /* ReminderViewController.swift in Sources */,
+				4B07D542230E894300151CB3 /* OnboardingController.swift in Sources */,
+				4E8A99EC230D4A6400A90EC1 /* AppDelegate.swift in Sources */,
+				4B07D53B230E872700151CB3 /* Slide.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E8A99FA230D4A6400A90EC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E8A99FB230D4A6400A90EC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E8A99FE230D4A6400A90EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E8A99FF230D4A6400A90EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E8A9A01230D4A6400A90EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85YSJX97S8;
+				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelwira.CancerForKids-Master";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4E8A9A02230D4A6400A90EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FN97V72AGN;
+				INFOPLIST_FILE = "CancerForKids-Master/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelwira.CancerForKids-Master";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E8A99E3230D4A6400A90EC1 /* Build configuration list for PBXProject "CancerForKids-Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E8A99FE230D4A6400A90EC1 /* Debug */,
+				4E8A99FF230D4A6400A90EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E8A9A00230D4A6400A90EC1 /* Build configuration list for PBXNativeTarget "CancerForKids-Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E8A9A01230D4A6400A90EC1 /* Debug */,
+				4E8A9A02230D4A6400A90EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B4517AF23169E6600ADD3B3 /* CancerForKids-Master.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */,
+			);
+			currentVersion = 4B4517B023169E6600ADD3B3 /* CancerForKids-Master.xcdatamodel */;
+			path = "CancerForKids-Master.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4E8A99E0230D4A6400A90EC1 /* Project object */;
+}
