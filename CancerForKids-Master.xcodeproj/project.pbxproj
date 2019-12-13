@@ -299,6 +299,9 @@
 		4E8A99EA230D4A6400A90EC1 /* CancerForKids-Master */ = {
 			isa = PBXGroup;
 			children = (
+				EF83A0CF23A42396005CEFDC /* Controller */,
+				EF83A0CE23A4238F005CEFDC /* View */,
+				EF83A0CD23A4237C005CEFDC /* Model */,
 				4B9DCEC3231D38B500ACEC1F /* DaftarKegiatan */,
 				4B5418FF231E66F400EC0F19 /* Reminder */,
 				4BA655FD23166AB900F28EB2 /* SakitNyaTuhDisini */,
@@ -404,6 +407,27 @@
 				4BA38150231FC87400E6A5EA /* SakitDimana.storyboard */,
 			);
 			path = Sakit;
+			sourceTree = "<group>";
+		};
+		EF83A0CD23A4237C005CEFDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF83A0CE23A4238F005CEFDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF83A0CF23A42396005CEFDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
